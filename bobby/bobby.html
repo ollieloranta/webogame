@@ -1,0 +1,77 @@
+<!--
+Bobby is a game where you play as Bobby the builder who
+gathers resources for him to construct buildings.
+The more resources you gather and buildings you create,
+the more points you get to the game.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bobby the builder</title>
+  <meta charset="utf-8"/>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="bobby.js"></script>
+  <link rel="stylesheet" type="text/css" href="bobby.css"></style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div id="top">
+    <span><i class="fa fa-home"></i></span>
+    <span id ="header">Create buildings with Bobby to earn his living!</span>
+    <span><i class="fa fa-home"></i></span>
+
+  </div>
+  <div id="points"><span id="score">0</span> Points</div>
+    <button id="get_wood">Gather wood from the forest</button>
+    <button id="get_stone">gather stone from the quarry</button>
+    <button id="buy_food">Buy food</button>
+    <button id="go_sleep">Go to sleep</button>
+
+  </div>
+
+  <div id="main">
+
+    <div id="building">
+      <h3>Total resources required for the next building (<span id=buildnum>1</span>) </h3>
+      <div>
+        Wood: <span id="wood_req">50</span>,
+        Stone: <span id="stone_req">70</span>,
+        Food: <span id="food_req">30</span>,
+        Stamina: <span id="stamina_req">60</span>
+
+      </div>
+      <button id="build">Build the building</button>
+    </div>
+
+    <div id="stats">
+      <h3>Your storage</h3>
+      <table id="resource_list" style="margin-left:auto;margin-right:auto;" class="storage">
+        <tr>
+          <td>Wood</td>
+          <td>Stone</td>
+          <td>Food</td>
+          <td>Stamina</td>
+          <td>Money</td>
+        </tr>
+        <tr>
+          <td id="wood">0</td>
+          <td id="stone">0</td>
+          <td id="food">100</td>
+          <td id="stamina">100</td>
+          <td id="money">2000</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <h2 id="popup"></h2>
+  <div id="menu">
+  <button id="submit_score">Retire and submit score</button><br>
+
+  <button id="save">Save game</button>
+  <button id="load">Load game</button>
+  </div>
+
+</body>
+</html>

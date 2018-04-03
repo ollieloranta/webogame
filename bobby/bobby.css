@@ -1,0 +1,43 @@
+/*
+The css-stylesheet for the Bobby-game
+*/
+
+* {
+  text-align: center;
+  font-family:cursive;
+}
+.storage {
+  border: 2px solid gray;
+}
+#top_bar{
+  display:inline;
+  padding:10px;
+}
+#main {
+  width:70%;
+  margin: 0 auto;
+}
+#stats, #building {
+  display:inline-grid;
+  padding:10px;
+}
+#menu {
+}
+#popup{
+  color:red;
+}
+#top{
+  color:coral;
+  display:inline;
+}
+#header{
+  font-size:25px;
+  margin: 20px;
+}
+h3{
+  color:dimgray;
+}
+#points{
+  font-size:25px;padding:10px;
+  color:olivedrab;
+}
