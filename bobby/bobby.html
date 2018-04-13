@@ -6,8 +6,12 @@ gathers resources for him to construct buildings.
 The more resources you gather and buildings you create,
 the more points you get to the game. Your aim is to get
 more points than anyone else!
-You can save and load your progress in the game and 
+
+You can save and load your progress in the game and
 return where you left.
+
+The game can automatically set its resolution to make it fit nicely
+on an iframe.
 
 Created by Group 13 (Olli Eloranta)
 -->
@@ -18,7 +22,7 @@ Created by Group 13 (Olli Eloranta)
   <meta charset="utf-8"/>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="bobby.js"></script>
-  <link rel="stylesheet" type="text/css" href="bobby.css"></style>
+  <link rel="stylesheet" type="text/css" href="bobby.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -30,12 +34,12 @@ Created by Group 13 (Olli Eloranta)
 
   </div>
   <div id="points"><span id="score">0</span> Points</div>
-    <button id="get_wood">Gather wood from the forest</button>
-    <button id="get_stone">gather stone from the quarry</button>
-    <button id="buy_food">Buy food</button>
-    <button id="go_sleep">Go to sleep</button>
+  <h2 id="popup"></h2>
 
-  </div>
+  <button id="get_wood">Gather wood from the forest</button>
+  <button id="get_stone">gather stone from the quarry</button>
+  <button id="buy_food">Buy food</button>
+  <button id="go_sleep">Go to sleep</button>
 
   <div id="main">
 
@@ -72,7 +76,6 @@ Created by Group 13 (Olli Eloranta)
     </div>
   </div>
 
-  <h2 id="popup"></h2>
   <div id="menu">
   <button id="submit_score">Retire and submit score</button><br>
 
