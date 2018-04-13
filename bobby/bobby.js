@@ -207,8 +207,8 @@ $(document).ready( function() {
   var message =  {
     messageType: "SETTING",
     options: {
-      "width": 800, //Integer
-      "height": 550 //Integer
+      "width": 650, //Integer
+      "height": 500 //Integer
       }
   };
   window.parent.postMessage(message, "*");
